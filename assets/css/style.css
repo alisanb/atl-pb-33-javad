@@ -1,0 +1,9 @@
+/* Hide aside when checkbox is checked */
+#Search:checked ~ .flex > aside {
+    display: none;
+}
+
+/* Show aside when checkbox is not checked (default state) */
+#Search:not(:checked) ~ .flex > aside {
+    display: flex;
+}
